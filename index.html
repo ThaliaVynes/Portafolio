@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>mini-proyecto</title>
+  </head>
+  <body class="bg-[rgb(10,15,34)]  border-[hsl(228,55%,9%)]  text-white">
+    <div class="bg-gradient-to-t from-[#1E293B] to-[#010916] min-h-screen">
+      
+      <header class="pt-10">
+        <nav class="flex justify-between items-center w-[90%] mx-auto relative">
+          <!-- LOGO -->
+          <img class="w-16" src="img/logo.png" alt="logo" />
+
+          <!-- MENU: 'hidden' en móvil, 'md:flex' en escritorio -->
+          <ul class="hidden md:flex gap-[4vw] items-center font-semibold">
+            <li><a class="hover:text-[#E3FF6A] transition" href="#">ABOUT ME</a></li>
+            <li><a class="hover:text-[#E3FF6A] transition" href="#">SKILLS</a></li>
+            <li><a class="hover:text-[#E3FF6A] transition" href="#">PROJECTS</a></li>
+          </ul>
+
+          <!-- BOTÓN CONTACTO: 'hidden' en móvil para que no estorbe, se muestra en escritorio -->
+          <div class="hidden md:flex border rounded-full px-4 py-1 items-center gap-2 border-white/20">
+            <button>CONTACT</button>
+            <img src="img/logo-flecha_110941.png" class="w-6 bg-amber-300 rounded-full" />
+          </div>
+
+          <!-- BOTÓN HAMBURGUESA: Solo visible en móvil ('md:hidden') -->
+          <button id="menu-btn" class="block md:hidden text-[#E3FF6A]">
+           <img
+          class="top-7 absolute w-10 left-70"
+          src="img/menu.png"
+          alt="menu"
+        />
+          </button>
+
+          <!-- MENÚ DESPLEGABLE MÓVIL (Se activa con JS) -->
+          <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-[#0D1117] border border-[#E3FF6A]/20 rounded-xl p-6 z-50">
+            <ul class="flex flex-col gap-6 items-center text-[#E3FF6A]">
+              <li><a href="#">ABOUT ME</a></li>
+              <li><a href="#">SKILLS</a></li>
+              <li><a href="#">PROJECTS</a></li>
+              <li><a href="#" class="bg-[#E3FF6A] text-black px-4 py-1 rounded-full">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+      <main class="flex flex-col items-center pt-20 px-4">
+        <!-- HERO TEXT: Ajustado con 'max-w-xs' en móvil para que no se corte -->
+        <h1 class="text-center text-3xl md:text-5xl font-bold max-w-sm md:max-w-4xl leading-tight">
+          I'm <em class="text-[#E3FF6A] not-italic">Thalia Villar</em><br class="md:hidden">
+          <span class="inline-block border px-3 py-1 rounded-xl text-sm md:text-xl m-2 align-middle">Technical Analyst</span> 
+          <span class="block md:inline">& Front-End Developer</span>
+        </h1>
+
+        <!-- IMAGEN CHICA -->
+        <div class="relative mt-10">
+          <img
+            class="w-full max-w-[320px] md:max-w-[450px] block align-bottom relative z-20 drop-shadow-[0_0_80px_rgba(164,255,122,0.4)]"
+            src="img/chica.png"
+            alt="chica"
+          />
+
+          <button
+            class="absolute z-30 bottom-5 left-1/2 -translate-x-1/2 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg whitespace-nowrap hover:scale-105 transition-transform"
+          >
+            MY PROJECTS
+          </button>
+        </div>
+      </main>
+    </div>
+  <!--SECTION PRINCIPAL
+relative -> permite posicionar elementos absolute dentro
+overflow-hidden -> oculta elementos que se salen del contenedor
+items-center -> centra horizontalmente
+-->
+<section class=" text-[#E3FF6A] py-24 relative overflow-hidden flex flex-col items-center">
+
+  <!-- 
+  TITULO
+  font-bold -> texto en negrita
+  mb-10 -> margen abajo
+  z-10 -> pone el texto encima de los elementos decorativos
+  -->
+  <h2 class="text-4xl font-bold mb-10 z-10">
+    WHO AM I?
+  </h2>
+    <!-- 
+    PARRAFO
+    text-[#dde7ae] -> color del texto
+    px-6 -> padding horizontal móvil
+    md:px-10 -> padding horizontal desktop
+    text-lg -> tamaño del texto
+    leading-relaxed -> espacio entre líneas
+    -->
+    <p class="text-[#dde7ae] px-6 md:px-10 text-lg text-center leading-relaxed ">
+
+      Soy desarrollador frontend enfocado en la creación de interfaces modernas,
+      responsivas y atractivas, priorizando la experiencia del usuario y la
+      calidad visual de cada proyecto. <br><br>
+
+      Trabajo con tecnologías como HTML, CSS, Tailwind CSS y JavaScript,
+      desarrollando soluciones limpias, funcionales y escalables. <br><br>
+
+      Me apasiona transformar ideas en experiencias digitales intuitivas,
+      combinando diseño y desarrollo para construir aplicaciones web
+      dinámicas y profesionales.
+
+    </p>
+     <!-- 
+  BOTON
+  mt-12 -> margen arriba
+  bg-[#E3FF6A] -> color fondo
+  text-black -> color texto
+  py-3 px-10 -> padding vertical y horizontal
+  rounded-full -> bordes totalmente redondos
+  shadow-lg -> sombra
+  hover:scale-105 -> aumenta tamaño al pasar mouse
+  transition-transform -> animación suave
+  -->
+  <button class="mt-12 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg hover:scale-105 transition-transform z-10">
+    SHOW MY PROJECTS
+  </button> 
+    <!-- 
+  IMAGEN DECORATIVA IZQUIERDA
+  absolute -> posición libre dentro del section
+  w-24 -> tamaño en móvil
+  md:w-40 -> tamaño en pantallas medianas
+  rotate-[-15deg] -> rota imagen
+  opacity-80 -> transparencia
+  drop-shadow -> glow/sombra
+  -->
+  <div class="mt-8 flex  gap-4  ">
+  <img class="w-26 h-50 rounded-2xl h-50  drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
+    src="img/imagen.png" 
+    alt="primer imagen volador"
+    
+  >
+
+  <!-- 
+  IMAGEN DECORATIVA DERECHA
+  top-1/2 -> mitad vertical
+  right-10 -> separación derecha
+  -translate-y-1/2 -> centra perfectamente verticalmente
+  rotate -> inclinación
+  -->
+  <img class="w-25 h-50 rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
+    src="img/imagen2.png" 
+    alt="segunda imagen volador"
+    
+  >
+
+  <!-- 
+  IMAGEN DECORATIVA ABAJO
+  bottom-10 -> separación abajo
+  opacity-90 -> transparencia ligera
+  -->
+  <img  class="w-25 h-50 rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
+    src="img/imagen3.png" 
+    alt="tercer imagen volador"
+   
+  >
+  </div>
+
+  <div class="max-w-3xl z-10 text-center">
+
+  </div>
+
+ 
+
+</section>
+
+
+    <section class="flex flex-col items-center justify-center " > 
+      <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10  "> MY SKILLS</h2>
+      <div class="flex m-1 ">
+      <div class="bg-[#1d2236]  rounded-sm p-7  m-1">
+        <img class="w-10 "  src="img/html-5.png" alt="img html">
+      </div>
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
+        <img class="w-10 " src="img/css-3.png" alt="img css">
+      </div>
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
+        <img  class="w-10" src="img/secuencia-de-comandos-de-java.png" alt="img java">
+      </div>
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
+        <img class="w-10"  src="img/react.png" alt="img react">
+      </div>
+      </div>
+      <div class="flex m-1">
+      <div class="bg-[#1d2236] rounded-sm p-7 m-1">
+        <img  class="w-10" src="img/internet.png" alt=" img next">
+      </div>
+      <div class="bg-[#1d2236] rounded-sm p-7 m-1">
+        <img class="w-10"  src="img/icons8-javascript-40.png" alt="img java">
+      </div>
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
+        <img  class="w-10" src="img/icons8-viento-de-cola-48.png" alt="img tailwind">
+      </div>
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
+        <img class="w-10"  src="img/icons8-nodejs-48.png" alt="img node">
+      </div>
+      </div>
+    
+      <div class="flex flex-col justify-center items-center bg-gray-900 rounded-sm w-50 h-55 m-10 mt-6">
+        <p class="text-center  text-3xl  font-bold text-white ">  4 </p>
+        <p class=" text-center font-bold text-white  "> Year <br>  Experience <br> Working </p>
+        <button class="bg-[#E3FF6A] text-black  px-3 py-1 rounded-2xl m-4 "> DOWNLOAD My CV</button>
+      </div>
+      </section>
+   <section class="flex flex-col items-center justify-center m-5 bg-[#1d2236] rounded-sm p-7 ">
+    <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10"> ADDITIONAL SKILLS</h3>
+     <div class= "flex gap-3">
+    <div class=" p-1"> 
+      <img  class="w-10 " src="img/bootstrap_plain_logo_icon_146619.png" alt="">
+    </div>
+    <div  class=" p-1"> 
+      <img class="w-20"  src="img/axios_logo_icon_168546.png" alt="">
+    </div>
+    <div  class=" p-1"> 
+      <img class="w-10"  src="img/redux_original_logo_icon_146365.png" alt="">
+    </div>
+    <div  class=" p-1">
+       <img class="w-10"  src="img/mui_logo_icon_248416.png" alt="">
+      </div>
+      </div>
+      <div class="flex gap-3 m-5">
+    <div   class=" p-1">
+       <img class="w-10"  src="img/firebase_logo_icon_171157.png" alt="">
+      </div>
+    <div class=" p-1">
+       <img class="w-10"  src="img/WordPress_icon-icons.com_66922.png" alt="">
+      </div>
+    <div class=" p-1"> 
+      <img class="w-10"  src="img/framer-motion-logo-png_seeklogo-446185.png" alt="">
+    </div>
+    </div>
+   </section>
+ 
+   <section class="flex flex-col  ">
+    
+    
+      <h2 class="text-3xl text-center m-10  font-extrabold">THE WORKS <br>CLOSET TO <br>MY HEART</h2>
+      <div class=" flex gap-4  m-10"> 
+      <img class="w-25 h-45 rounded-2xl" src="img/imagen.png" alt="">
+      <img class="w-25 h-45 rounded-2xl" src="img/imagen2.png" alt="">
+      <img class="w-25 h-45 rounded-2xl" src="img/imagen3.png" alt="">
+       
+    </div>
+    <div class="flex">
+    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-2 rounded-xl mt-1 w-50 m-5">SHOW MY PROYECTS</button>
+       <P class="font-bold">Plumbig <br> Company</P>
+       </div>
+   </section>
+   <section class="bg-white flex flex-col m-5 rounded-2xl p-6">
+  <h2 class="text-center font-bold text-[#0D1117] text-3xl mb-8 mt-2">
+    LET´S HAVE A CHAT
+  </h2>
+
+  <div class="flex flex-col gap-4">
+    
+    <input 
+      type="text" 
+      aria-label="Nombre completo"
+      placeholder="YOUR NAME" 
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
+    >
+
+    <input 
+      type="email" 
+      aria-label="Correo electrónico"
+      placeholder="YOUR EMAIL" 
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
+    >
+
+    <textarea 
+      placeholder="CHAT HERE..." 
+      aria-label="Mensaje"
+      rows="4"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors resize-none"
+    ></textarea>
+
+    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-4 rounded-xl mt-2 ">
+      SUBMIT HERE
+    </button>
+  </div>
+</section>
+          
+
+
+     </main>
+  </body>
+</html>
