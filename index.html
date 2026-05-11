@@ -209,50 +209,76 @@ items-center -> centra horizontalmente
 </section>
   <!-- section 3 MY SKILLS -->
        <div>
-         <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10 md:text-8xl text-center  "> MY SKILLS</h2>
+         <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10 md:text-8xl text-center md:m-25 "> MY SKILLS</h2>
        </div>
 
-    <section class="flex flex-col items-center justify-center   md:m-2  r md:grid md:grid-cols-3 md:items-start md:gap-10 " > 
-     
-      <div class="flex m-1  md:col-span-2   md:items-start ">
-      <div class="bg-[#1d2236]  rounded-sm p-7  md:p-10  m-1  md:w-90 md:h-110 ">
-        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto  "  src="img/html-5.png" alt="img html">
+    <section class="grid grid-cols-1 md:grid-cols-6 md:gap-6 md:items-start m-5">
+
+  <!-- FILA 1 + 2 DE IMÁGENES (4 columnas por fila) -->
+  <div class="md:col-span-4 flex flex-col gap-4">
+
+    <!-- fila 1 -->
+    <div class="grid grid-cols-4 gap-4 md:h-75  ">
+      <div class="bg-[#1d2236] p-4 rounded-sm   ">
+        <img class="w-10 md:w-45 mx-auto   " src="img/html-5.png">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
-        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/css-3.png" alt="img css">
+
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto " src="img/css-3.png">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
-        <img  class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/secuencia-de-comandos-de-java.png" alt="img java">
+
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto " src="img/secuencia-de-comandos-de-java.png">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110 ">
-        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto "  src="img/react.png" alt="img react">
+
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto" src="img/react.png">
       </div>
+    </div>
+
+    <!-- fila 2 -->
+    <div class="grid grid-cols-4 gap-4 md:h-75 ">
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto" src="img/internet.png">
       </div>
-      <div class="flex m-1  md:items-start md:col-span-2 ">
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
-        <img  class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/internet.png" alt=" img next">
+
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto" src="img/icons8-javascript-40.png">
       </div>
-      <div class="bg-[#1d2236] rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
-        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto "  src="img/icons8-javascript-40.png" alt="img java">
+
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto" src="img/icons8-viento-de-cola-48.png">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
-        <img  class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/icons8-viento-de-cola-48.png" alt="img tailwind">
+
+      <div class="bg-[#1d2236] p-4 rounded-sm">
+        <img class="w-10 md:w-45 mx-auto" src="img/icons8-nodejs-48.png">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
-        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto "  src="img/icons8-nodejs-48.png" alt="img node">
-      </div>
-      </div>
-    
-      <div class="flex flex-col justify-center items-center bg-gray-900 rounded-sm   w-50 h-55 m-10 mt-6 md:w-150 md:h-220 ">
-        <p class="text-center  text-3xl  font-bold text-white md:text-center md:text-9xl  ">  4 </p>
-        <p class=" text-center font-bold text-white  md:text-3xl"> Year <br>  Experience <br> Working </p>
-        <button class="bg-[#E3FF6A] text-black  px-3 py-1 rounded-2xl m-4  md:w-80 md:h-19 md:text-3xl md:font-bold "> DOWNLOAD My CV</button>
-      </div>
-      </section>
+    </div>
+
+  </div>
+
+  <!-- TEXTO (OCUPA 2 COLUMNAS A LA DERECHA) -->
+ <div class="md:col-span-2 flex flex-col justify-start items-center bg-gray-900 rounded-sm p-5 m-3  md:px-10 md:py-8  md:self-start md:gap-16">
+
+    <p class="text-white text-3xl md:text-9xl font-bold ">4</p>
+
+    <p class="text-white text-center md:text-6xl md:font-bold ">
+      Year <br> 
+      Experience <br>
+      Working
+    </p>
+
+    <button class="bg-[#E3FF6A] text-black px-4 py-2 md:py-7 rounded-2xl mt-4 md:w-80 md:text-2xl font-bold">
+      DOWNLOAD My CV
+    </button>
+
+  </div>
+
+</section>
       <!-- section 4 ADDITIONAL SKILLS -->
    <section class="flex flex-col items-center justify-center m-5 bg-[#1d2236] rounded-sm p-7  md:-bottom-200 md:m-25    ">
       <div class="md:text-center">
-        <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10 md:text-6xl"> ADDITIONAL SKILLS</h3> </div>
+        <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10 md:text-6xl "> ADDITIONAL SKILLS</h3> </div>
      <div class= "flex gap-3  m-5 md:flex ">
     <div class=" p-1"> 
       <img  class="w-10 md:w-25 " src="img/bootstrap_plain_logo_icon_146619.png" alt="">
@@ -280,18 +306,19 @@ items-center -> centra horizontalmente
     </div>
    </section>
   <!-- section 4 THE WORKS -->
-   <section class="flex flex-col md:felx  ">
+   <section class="flex flex-col md:flex md:flex-row md:relative md:w-300 md:mb-150 ">
     
-    
-      <h2 class="text-3xl text-center m-10  font-extrabold">THE WORKS <br>CLOSET TO <br>MY HEART</h2>
-      <div class=" flex gap-4  m-10"> 
-      <img class="w-25 h-45 rounded-2xl" src="img/imagen.png" alt="">
-      <img class="w-25 h-45 rounded-2xl" src="img/imagen2.png" alt="">
-      <img class="w-25 h-45 rounded-2xl" src="img/imagen3.png" alt="">
+        <div class="md:w-170 flex items-start md:flex   ">
+      <h2 class="text-3xl text-center m-10  font-extrabold md:text-8xl md:text-lef ">THE WORKS <br>CLOSET TO <br>MY HEART</h2>
+      </div>
+      <div class=" flex gap-4  m-10 "> 
+      <img class="w-25 h-45 rounded-2xl md:w-100 md:h-150" src="img/imagen.png" alt="img1">
+      <img class="w-25 h-45 rounded-2xl" src="img/imagen2.png" alt="img1">
+      <img class="w-25 h-45 rounded-2xl" src="img/imagen3.png" alt="img1">
        
     </div>
     <div class="flex">
-    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-2 rounded-xl mt-1 w-50 m-5">SHOW MY PROYECTS</button>
+    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-2 rounded-xl mt-1 w-50 m-5 md:absolute">SHOW MY PROYECTS</button>
        <P class="font-bold">Plumbig <br> Company</P>
        </div>
    </section>
