@@ -13,19 +13,19 @@
       <header class="pt-10">
         <nav class="flex justify-between items-center w-[90%] mx-auto relative">
           <!-- LOGO -->
-          <img class="w-16" src="img/logo.png" alt="logo" />
+          <img class="w-16 md:w-40" src="img/logo.png" alt="logo" />
 
           <!-- MENU: 'hidden' en móvil, 'md:flex' en escritorio -->
-          <ul class="hidden md:flex gap-[4vw] items-center font-semibold">
+          <ul class="hidden md:flex gap-[4vw] items-center font-semibold md:text-4xl">
             <li><a class="hover:text-[#E3FF6A] transition" href="#">ABOUT ME</a></li>
             <li><a class="hover:text-[#E3FF6A] transition" href="#">SKILLS</a></li>
             <li><a class="hover:text-[#E3FF6A] transition" href="#">PROJECTS</a></li>
           </ul>
 
           <!-- BOTÓN CONTACTO: 'hidden' en móvil para que no estorbe, se muestra en escritorio -->
-          <div class="hidden md:flex border rounded-full px-4 py-1 items-center gap-2 border-white/20">
-            <button>CONTACT</button>
-            <img src="img/logo-flecha_110941.png" class="w-6 bg-amber-300 rounded-full" />
+          <div class="hidden md:flex border rounded-full px-4 py-1 items-center gap-2 border-white/20 md:w-57 md:h-20">
+            <button class="md:text-3xl">CONTACT</button>
+            <img src="img/logo-flecha_110941.png" class="w-6 md:w-15 bg-amber-300 rounded-full" />
           </div>
 
           <!-- BOTÓN HAMBURGUESA: Solo visible en móvil ('md:hidden') -->
@@ -51,78 +51,79 @@
       
       <main class="flex flex-col items-center pt-20 px-4">
         <!-- HERO TEXT: Ajustado con 'max-w-xs' en móvil para que no se corte -->
-        <h1 class="text-center text-3xl md:text-5xl font-bold max-w-sm md:max-w-4xl leading-tight">
+        <h1 class="text-center text-3xl md:text-7xl font-bold max-w-sm md:max-w-4xl leading-tight">
           I'm <em class="text-[#E3FF6A] not-italic">Thalia Villar</em><br class="md:hidden">
-          <span class="inline-block border px-3 py-1 rounded-xl text-sm md:text-xl m-2 align-middle">Technical Analyst</span> 
-          <span class="block md:inline">& Front-End Developer</span>
+          <span class="inline-block border px-3 py-1 rounded-sm text-2xl md:text-6xl  m-2 align-middle">FULL STACK</span> 
+          <span class="block md:inline "> Front-End Developer</span>
         </h1>
 
         <!-- IMAGEN CHICA  HEADER MEDIO-->
         <div class="relative mt-10  ">
           <img
-            class="w-full max-w-[320px] md:max-w-[450px] block align-bottom relative z-20 drop-shadow-[0_-70px_80px_rgba(164,255,122,0.6)]  "
+            class="w-[320px] md:w-210 block align-bottom relative z-20 drop-shadow-[0_-70px_80px_rgba(164,255,122,0.6)]  "
             src="img/chica.png"
             alt="chica"
           />
-          <div class="absolute left-40">
+          <div class="absolute left-40 ">
+            <!-- bOTON DE LA IMAGEN PRICIPAL-->
           <button
-            class="absolute z-30 bottom-5 left-1/2 -translate-x-1/2 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg whitespace-nowrap hover:scale-105 transition-transform"
+            class="absolute z-20 bottom-10 -right-20 md:text-4xl md:-right-105 md:w-80 md:p-7 md:h-20 bg-[#E3FF6A] text-black font-bold py-2 px-7 rounded-full shadow-lg whitespace-nowrap hover:scale-105 transition-transform"
           >
             MY PROJECTS
           </button>
           </div>
 
            <!-- CAJA voladora 1 header -->
-          <section class="flex flex-col mt-20 justify-center items-center gap-3 mb-4 ">
-            <div class="bg-[#202336]  rounded-2xl  p-5">
-              <h2 class="font-bold ">Client Review  Frond <br>
+          <section class=" flex flex-col mt-20 md:mt-0 justify-center items-center gap-3 mb-4 md:mb-0 w-85 md:relative md:h-0 ">
+            <div class="bg-[#202336]  rounded-2xl md:text-3xl p-5 md:w-120 md:p-10 md:relative md:bottom-120 md:right-140 md:-rotate-10">
+              <h2 class="font-bold  ">Client Review  Frond <br>
               Austtralia </h2>
               <p class="text-[#546170]">Lorem, ipsum dolor sit amet consectetur ex temporibus repudiandae  molestiae?</p>
             </div>
 
             <!-- CAJA voladora 2 header -->
-            <div class="bg-[#202336]  rounded-2xl  p-10 w-85 "> 
+            <div class="bg-[#202336]  rounded-2xl  p-10 w-85  md:w-125 md:px-10 md:py-19   md:text-3xl md:absolute md:bottom-90 md:left-240 md:rotate-10 "> 
              <h2 class="font-bold mb-4 "> MY EXPERTISE </h2>
               <!-- BACKEND -->
-         <div class="mb-4 mb-1">
+         <div class="mb-4 ">
 
-    <!-- CAJA voladora 2 header -->
-         <div class="flex justify-between items-center text-xs mb-1 w-50  ">
+    <!-- Backend-->
+         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-2xl">
              <span class="text-[#97a2ad]">BACKEND</span>
              <span ">90%</span>
          </div >
        <!-- barra -->
-         <div class="relative w-full h-[3px] bg-gray-800 rounded-full ">
+         <div class="relative w-full h-[0.75px] bg-gray-600 rounded-full ">
         <!-- progreso -->
-           <div class="absolute h-[1px] w-[90%] bg-white rounded-full "></div>
+           <div class="absolute h-[0.75px] w-[90%] bg-white rounded-full "></div>
           <!-- bolita -->
          <div class="absolute right-[10%] top-1/2 -translate-y-1/2 w-3 h-3 bg-[#3d3491] rounded-full border-2 border-white"></div>
 
          <!-- CMS -->
-         <div class="mb-4">
+         <div class="mb-4 ">
     <!-- texto -->
-         <div class="flex justify-between items-center text-xs mb-1 w-50">
+         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-2xl">
              <span class="text-[#97a2ad]">CMS</span>
              <span ">50%</span>
          </div >
        <!-- barra -->
-         <div class="relative w-full h-[2px] bg-gray-600 rounded-full">
+         <div class="relative w-full h-[0.75px] bg-gray-600 rounded-full">
         <!-- progreso -->
-           <div class="absolute h-[1px] w-[50%] bg-white rounded-full"></div>
+           <div class="absolute h-[0.75px] w-[50%] bg-white rounded-full"></div>
           <!-- bolita -->
          <div class="absolute right-[50%] top-1/2 -translate-y-1/2 w-3 h-3 bg-blue-700 rounded-full border-2 border-white"></div>
          
          <!-- frontend -->
          <div class="mb-4 ">
     <!-- texto -->
-         <div class="flex justify-between items-center text-xs mb-1 w-50">
+         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-2xl ">
              <span class="text-[#97a2ad]">FRONTEND</span>
              <span ">91%</span>
          </div >
        <!-- barra -->
-         <div class="relative w-full h-[2px] bg-gray-600 rounded-full">
+         <div class="relative w-full h-[0.75px] bg-gray-600 rounded-full">
         <!-- progreso -->
-           <div class="absolute h-[1px] w-[91%] bg-white rounded-full"></div>
+           <div class="absolute h-[0.75px] w-[91%] bg-white rounded-full"></div>
           <!-- bolita -->
          <div class="absolute right-[9%] top-1/2 -translate-y-1/2 w-3 h-3 bg-yellow-300 rounded-full border-2 border-white"></div>
 
@@ -143,69 +144,37 @@ relative -> permite posicionar elementos absolute dentro
 overflow-hidden -> oculta elementos que se salen del contenedor
 items-center -> centra horizontalmente
 -->
-<section class=" text-[#E3FF6A] py-24 relative  flex flex-col items-center">
+<section class=" text-[#E3FF6A] py-24 relative  flex flex-col items-center   md:relative  md:m-30">
 
-  <!-- 
-  TITULO
-  font-bold -> texto en negrita
-  mb-10 -> margen abajo
-  z-10 -> pone el texto encima de los elementos decorativos
-  -->
-  <h2 class="text-4xl font-bold mb-10 z-10">
+  <h2 class="text-4xl  md:text-8xl   font-bold mb-10 z-10">
     WHO AM I?
   </h2>
-    <!-- 
-    PARRAFO
-    text-[#dde7ae] -> color del texto
-    px-6 -> padding horizontal móvil
-    md:px-10 -> padding horizontal desktop
-    text-lg -> tamaño del texto
-    leading-relaxed -> espacio entre líneas
-    -->
-    <p class="text-[#dde7ae] px-6 md:px-10 text-lg text-center leading-relaxed ">
+    <p class="text-[#dde7ae] px-6 md:px-10   text-lg text-center leading-relaxed md:text-center md:text-3xl">
 
-       I am a Front-End Developer focused on creating modern,
-      responsive, and engaging interfaces. I prioritize user experience and
+       I am a Front-End Developer focused on creating modern,<br>
+      responsive, and engaging interfaces. <br> I prioritize user experience and
      visual quality in every project.<br><br>
 
-       I work with technologies such as HTML, CSS, Tailwind CSS, and
+       I work with technologies such as  HTML, CSS, Tailwind CSS,<br> and
       JavaScript, developing clean, functional, and scalable solutions. <br><br>
 
-      I am passionate about transforming ideas into intuitive digital
-      experiences, combining design and development to build dynamic
+      I am passionate about transforming ideas <br> into intuitive digital
+      experiences,  combining design and development <br> to build dynamic
       and professional web applications.
 
     </p>
-     <!-- 
-  BOTON
-  mt-12 -> margen arriba
-  bg-[#E3FF6A] -> color fondo
-  text-black -> color texto
-  py-3 px-10 -> padding vertical y horizontal
-  rounded-full -> bordes totalmente redondos
-  shadow-lg -> sombra
-  hover:scale-105 -> aumenta tamaño al pasar mouse
-  transition-transform -> animación suave
-  -->
-  <button class="mt-12 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg hover:scale-105 transition-transform z-10">
+  <button class="mt-12 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg hover:scale-105 transition-transform z-10 md:w-100 md:p-5 md:text-3xl">
     SHOW MY PROJECTS
   </button> 
     <!-- 
   IMAGEN DECORATIVA IZQUIERDA
-  absolute -> posición libre dentro del section
-  w-24 -> tamaño en móvil
-  md:w-40 -> tamaño en pantallas medianas
   rotate-[-15deg] -> rota imagen
-  opacity-80 -> transparencia
-  drop-shadow -> glow/sombra
+  opacity-80 -> transparencia 
   -->
-  <div class="mt-8 flex  gap-4  ">
-  <img class="w-26 h-50 rounded-2xl h-50  drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
-    src="img/imagen.png" 
-    alt="primer imagen volador"
-    
+  <div class="mt-8 flex  gap-4     ">
+  <img class="w-26 rounded-2xl h-50 md:w-18 md:h-33  md:absolute md:left-1/4 md:-rotate-25 md:-top-10 drop-shadow-[0_0_15px_rgba(227,255,106,0.3) md:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)]  "
+    src="img/imagen.png" alt="primer imagen volador"
   >
-
   <!-- 
   IMAGEN DECORATIVA DERECHA
   top-1/2 -> mitad vertical
@@ -213,7 +182,7 @@ items-center -> centra horizontalmente
   -translate-y-1/2 -> centra perfectamente verticalmente
   rotate -> inclinación
   -->
-  <img class="w-25 h-50 rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
+  <img class="w-25 h-50  md:w-25 md:h-70 md:top-1/2 md:absolute md:left-1/6 md:rotate-25  rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)] md:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)] "
     src="img/imagen2.png" 
     alt="segunda imagen volador"
     
@@ -224,7 +193,7 @@ items-center -> centra horizontalmente
   bottom-10 -> separación abajo
   opacity-90 -> transparencia ligera
   -->
-  <img  class="w-25 h-50 rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
+  <img  class="w-25 h-50 rounded-2xl  md:absolute md:top-50 md:right-65 md:w-50  md:h-70  md:-rotate-25 drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
     src="img/imagen3.png" 
     alt="tercer imagen volador"
    
@@ -239,75 +208,79 @@ items-center -> centra horizontalmente
 
 </section>
   <!-- section 3 MY SKILLS -->
+       <div>
+         <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10 md:text-8xl text-center  "> MY SKILLS</h2>
+       </div>
 
-    <section class="flex flex-col items-center justify-center " > 
-      <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10  "> MY SKILLS</h2>
-      <div class="flex m-1 ">
-      <div class="bg-[#1d2236]  rounded-sm p-7  m-1">
-        <img class="w-10 "  src="img/html-5.png" alt="img html">
+    <section class="flex flex-col items-center justify-center   md:m-2  r md:grid md:grid-cols-3 md:items-start md:gap-10 " > 
+     
+      <div class="flex m-1  md:col-span-2   md:items-start ">
+      <div class="bg-[#1d2236]  rounded-sm p-7  md:p-10  m-1  md:w-90 md:h-110 ">
+        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto  "  src="img/html-5.png" alt="img html">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
-        <img class="w-10 " src="img/css-3.png" alt="img css">
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
+        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/css-3.png" alt="img css">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
-        <img  class="w-10" src="img/secuencia-de-comandos-de-java.png" alt="img java">
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
+        <img  class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/secuencia-de-comandos-de-java.png" alt="img java">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
-        <img class="w-10"  src="img/react.png" alt="img react">
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110 ">
+        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto "  src="img/react.png" alt="img react">
       </div>
       </div>
-      <div class="flex m-1">
-      <div class="bg-[#1d2236] rounded-sm p-7 m-1">
-        <img  class="w-10" src="img/internet.png" alt=" img next">
+      <div class="flex m-1  md:items-start md:col-span-2 ">
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
+        <img  class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/internet.png" alt=" img next">
       </div>
-      <div class="bg-[#1d2236] rounded-sm p-7 m-1">
-        <img class="w-10"  src="img/icons8-javascript-40.png" alt="img java">
+      <div class="bg-[#1d2236] rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
+        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto "  src="img/icons8-javascript-40.png" alt="img java">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
-        <img  class="w-10" src="img/icons8-viento-de-cola-48.png" alt="img tailwind">
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
+        <img  class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto " src="img/icons8-viento-de-cola-48.png" alt="img tailwind">
       </div>
-      <div class="bg-[#1d2236]  rounded-sm p-7 m-1">
-        <img class="w-10"  src="img/icons8-nodejs-48.png" alt="img node">
+      <div class="bg-[#1d2236]  rounded-sm p-7 m-1 md:p-10 md:w-90 md:h-110">
+        <img class="w-10 md:w-60 md:mt-10 mx-auto  md:m-2 md:mx-auto "  src="img/icons8-nodejs-48.png" alt="img node">
       </div>
       </div>
     
-      <div class="flex flex-col justify-center items-center bg-gray-900 rounded-sm w-50 h-55 m-10 mt-6">
-        <p class="text-center  text-3xl  font-bold text-white ">  4 </p>
-        <p class=" text-center font-bold text-white  "> Year <br>  Experience <br> Working </p>
-        <button class="bg-[#E3FF6A] text-black  px-3 py-1 rounded-2xl m-4 "> DOWNLOAD My CV</button>
+      <div class="flex flex-col justify-center items-center bg-gray-900 rounded-sm   w-50 h-55 m-10 mt-6 md:w-150 md:h-220 ">
+        <p class="text-center  text-3xl  font-bold text-white md:text-center md:text-9xl  ">  4 </p>
+        <p class=" text-center font-bold text-white  md:text-3xl"> Year <br>  Experience <br> Working </p>
+        <button class="bg-[#E3FF6A] text-black  px-3 py-1 rounded-2xl m-4  md:w-80 md:h-19 md:text-3xl md:font-bold "> DOWNLOAD My CV</button>
       </div>
       </section>
       <!-- section 4 ADDITIONAL SKILLS -->
-   <section class="flex flex-col items-center justify-center m-5 bg-[#1d2236] rounded-sm p-7 ">
-    <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10"> ADDITIONAL SKILLS</h3>
-     <div class= "flex gap-3">
+   <section class="flex flex-col items-center justify-center m-5 bg-[#1d2236] rounded-sm p-7  md:-bottom-200 md:m-25    ">
+      <div class="md:text-center">
+        <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10 md:text-6xl"> ADDITIONAL SKILLS</h3> </div>
+     <div class= "flex gap-3  m-5 md:flex ">
     <div class=" p-1"> 
-      <img  class="w-10 " src="img/bootstrap_plain_logo_icon_146619.png" alt="">
+      <img  class="w-10 md:w-25 " src="img/bootstrap_plain_logo_icon_146619.png" alt="">
     </div>
     <div  class=" p-1"> 
-      <img class="w-20"  src="img/axios_logo_icon_168546.png" alt="">
+      <img class="w-20 md:w-60"  src="img/axios_logo_icon_168546.png" alt="">
     </div>
     <div  class=" p-1"> 
-      <img class="w-10"  src="img/redux_original_logo_icon_146365.png" alt="">
+      <img class="w-10 md:w-25"  src="img/redux_original_logo_icon_146365.png" alt="">
     </div>
     <div  class=" p-1">
-       <img class="w-10"  src="img/mui_logo_icon_248416.png" alt="">
+       <img class="w-10 md:w-25"  src="img/mui_logo_icon_248416.png" alt="">
       </div>
       </div>
-      <div class="flex gap-3 m-5">
+      <div class="flex gap-3 m-5 md:flex ">
     <div   class=" p-1">
-       <img class="w-10"  src="img/firebase_logo_icon_171157.png" alt="">
+       <img class="w-10 md:w-25"  src="img/firebase_logo_icon_171157.png" alt="">
       </div>
     <div class=" p-1">
-       <img class="w-10"  src="img/WordPress_icon-icons.com_66922.png" alt="">
+       <img class="w-10 md:w-25"  src="img/WordPress_icon-icons.com_66922.png" alt="">
       </div>
     <div class=" p-1"> 
-      <img class="w-10"  src="img/framer-motion-logo-png_seeklogo-446185.png" alt="">
+      <img class="w-10 md:w-25"  src="img/framer-motion-logo-png_seeklogo-446185.png" alt="">
     </div>
     </div>
    </section>
   <!-- section 4 THE WORKS -->
-   <section class="flex flex-col  ">
+   <section class="flex flex-col md:felx  ">
     
     
       <h2 class="text-3xl text-center m-10  font-extrabold">THE WORKS <br>CLOSET TO <br>MY HEART</h2>
@@ -325,35 +298,35 @@ items-center -> centra horizontalmente
 
     <!-- section 5 FORMULARIO -->
 
-   <section class="bg-white flex flex-col m-5 rounded-2xl p-6">
-  <h2 class="text-center font-bold text-[#0D1117] text-3xl mb-8 mt-2">
+   <section class="bg-white flex flex-col m-5 rounded-2xl p-6  md:h-280 md:px-10 md:py-30 md:m-20">
+  <h2 class="text-center font-bold text-[#0D1117] text-3xl mb-8 mt-2 md:text-7xl ">
     LET´S HAVE A CHAT
   </h2>
 
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col gap-4 md:text clear-start md:text-4xl   ">
     
     <input 
       type="text" 
       aria-label="Nombre completo"
       placeholder="YOUR NAME" 
-      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500  md:h-25 border  border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
     >
 
     <input 
       type="email" 
       aria-label="Correo electrónico"
       placeholder="YOUR EMAIL" 
-      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 md:h-25 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
     >
 
     <textarea 
       placeholder="CHAT HERE..." 
       aria-label="Mensaje"
       rows="4"
-      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors resize-none"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 md:h-120 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors resize-none"
     ></textarea>
 
-    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-4 rounded-xl mt-2 ">
+    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-4 rounded-xl mt-2 md:rounded-3xl ">
       SUBMIT HERE
     </button>
   </div>
