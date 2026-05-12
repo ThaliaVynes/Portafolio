@@ -13,19 +13,19 @@
       <header class="pt-10">
         <nav class="flex justify-between items-center w-[90%] mx-auto relative">
           <!-- LOGO -->
-          <img class="w-16 md:w-40" src="img/logo.png" alt="logo" />
+          <img class="w-16 md:w-18" src="img/logo.png" alt="logo" />
 
           <!-- MENU: 'hidden' en móvil, 'md:flex' en escritorio -->
-          <ul class="hidden md:flex gap-[4vw] items-center font-semibold md:text-4xl">
+          <ul class="hidden md:flex gap-[4vw] items-center font-semibold md:text-2xl">
             <li><a class="hover:text-[#E3FF6A] transition" href="#">ABOUT ME</a></li>
             <li><a class="hover:text-[#E3FF6A] transition" href="#">SKILLS</a></li>
             <li><a class="hover:text-[#E3FF6A] transition" href="#">PROJECTS</a></li>
           </ul>
 
           <!-- BOTÓN CONTACTO: 'hidden' en móvil para que no estorbe, se muestra en escritorio -->
-          <div class="hidden md:flex border rounded-full px-4 py-1 items-center gap-2 border-white/20 md:w-57 md:h-20">
-            <button class="md:text-3xl">CONTACT</button>
-            <img src="img/logo-flecha_110941.png" class="w-6 md:w-15 bg-amber-300 rounded-full" />
+          <div class="hidden md:flex border rounded-full px-4 py-1 items-center gap-2 border-white/20 md:w-30 md:h-12">
+            <button class="md:text-sm">CONTACT</button>
+            <img src="img/logo-flecha_110941.png" class="w-6 md:w-7 bg-amber-300 rounded-full" />
           </div>
 
           <!-- BOTÓN HAMBURGUESA: Solo visible en móvil ('md:hidden') -->
@@ -37,7 +37,7 @@
         />
           </button>
 
-          <!-- MENÚ DESPLEGABLE MÓVIL (Se activa con JS) -->
+          <!-- MENÚ DESPLEGABLE MÓVIL -->
           <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-[#0D1117] border border-[#E3FF6A]/20 rounded-xl p-6 z-50">
             <ul class="flex flex-col gap-6 items-center text-[#E3FF6A]">
               <li><a href="#">ABOUT ME</a></li>
@@ -49,25 +49,27 @@
         </nav>
       </header>
       
-      <main class="flex flex-col items-center pt-20 px-4">
-        <!-- HERO TEXT: Ajustado con 'max-w-xs' en móvil para que no se corte -->
-        <h1 class="text-center text-3xl md:text-7xl font-bold max-w-sm md:max-w-4xl leading-tight">
-          I'm <em class="text-[#E3FF6A] not-italic">Thalia Villar</em><br class="md:hidden">
-          <span class="inline-block border px-3 py-1 rounded-sm text-2xl md:text-6xl  m-2 align-middle">FULL STACK</span> 
-          <span class="block md:inline "> Front-End Developer</span>
-        </h1>
+      <main class="flex flex-col items-center pt-20 px-4 ">
+        <!-- HERO TEXT: -->
+        <h1 class="text-center text-3xl md:text-5xl font-bold   leading-tight">
+          I'm <em class="text-[#E3FF6A] not-italic text-3xl  md:text-5xl">Thalia Villar</em>
+          </h1>
+          <div  class="flex items-center gap-3 mt-4 flex-wrap justify-center" >
+          <span <span class="border px-3 py-1 rounded-sm text-2xl md:text-4xl">FULL STACK</span> 
+          <span class="text-2xl md:text-5xl font-bold"> Front-End Developer</span>
+          </div>
 
         <!-- IMAGEN CHICA  HEADER MEDIO-->
         <div class="relative mt-10  ">
           <img
-            class="w-[320px] md:w-210 block align-bottom relative z-20 drop-shadow-[0_-70px_80px_rgba(164,255,122,0.6)]  "
+            class="w-[320px] md:w-100 block align-bottom relative z-20 drop-shadow-[0_-70px_80px_rgba(164,255,122,0.6)]  "
             src="img/chica.png"
             alt="chica"
           />
-          <div class="absolute left-40 ">
+          <div class="absolute left-15 ">
             <!-- bOTON DE LA IMAGEN PRICIPAL-->
           <button
-            class="absolute z-20 bottom-10 -right-20 md:text-4xl md:-right-105 md:w-80 md:p-7 md:h-20 bg-[#E3FF6A] text-black font-bold py-2 px-7 rounded-full shadow-lg whitespace-nowrap hover:scale-105 transition-transform"
+            class="absolute z-20 bottom-8 -right-44 md:-right-58 md:w-46 bg-[#E3FF6A] text-black font-bold py-2 px-5 rounded-full shadow-lg whitespace-nowrap hover:scale-105 transition-transform"
           >
             MY PROJECTS
           </button>
@@ -75,20 +77,20 @@
 
            <!-- CAJA voladora 1 header -->
           <section class=" flex flex-col mt-20 md:mt-0 justify-center items-center gap-3 mb-4 md:mb-0 w-85 md:relative md:h-0 ">
-            <div class="bg-[#202336]  rounded-2xl md:text-3xl p-5 md:w-120 md:p-10 md:relative md:bottom-120 md:right-140 md:-rotate-10">
+            <div class="bg-[#202336]  rounded-2xl md:text-sm p-5 md:w-85 md:p-5 md:relative md:bottom-70 md:right-116 md:-rotate-6">
               <h2 class="font-bold  ">Client Review  Frond <br>
               Austtralia </h2>
               <p class="text-[#546170]">Lorem, ipsum dolor sit amet consectetur ex temporibus repudiandae  molestiae?</p>
             </div>
 
             <!-- CAJA voladora 2 header -->
-            <div class="bg-[#202336]  rounded-2xl  p-10 w-85  md:w-125 md:px-10 md:py-19   md:text-3xl md:absolute md:bottom-90 md:left-240 md:rotate-10 "> 
+            <div class="bg-[#202336]  rounded-2xl  p-10 w-85  md:w-85 md:px-7 md:py-8   md:text-sm md:absolute md:bottom-50 md:left-130 md:rotate-6 "> 
              <h2 class="font-bold mb-4 "> MY EXPERTISE </h2>
               <!-- BACKEND -->
          <div class="mb-4 ">
 
     <!-- Backend-->
-         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-2xl">
+         <div class="flex justify-between items-center text-xs mb-1 w-70  md:text-xs">
              <span class="text-[#97a2ad]">BACKEND</span>
              <span ">90%</span>
          </div >
@@ -102,7 +104,7 @@
          <!-- CMS -->
          <div class="mb-4 ">
     <!-- texto -->
-         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-2xl">
+         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-xs">
              <span class="text-[#97a2ad]">CMS</span>
              <span ">50%</span>
          </div >
@@ -116,7 +118,7 @@
          <!-- frontend -->
          <div class="mb-4 ">
     <!-- texto -->
-         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-2xl ">
+         <div class="flex justify-between items-center text-xs mb-1 w-50  md:text-xs ">
              <span class="text-[#97a2ad]">FRONTEND</span>
              <span ">91%</span>
          </div >
@@ -144,12 +146,12 @@ relative -> permite posicionar elementos absolute dentro
 overflow-hidden -> oculta elementos que se salen del contenedor
 items-center -> centra horizontalmente
 -->
-<section class=" text-[#E3FF6A] py-24 relative  flex flex-col items-center   md:relative  md:m-30">
+<section class=" text-[#E3FF6A] py-24 relative  flex flex-col items-center   md:relative  md:m-10">
 
-  <h2 class="text-4xl  md:text-8xl   font-bold mb-10 z-10">
+  <h2 class="text-4xl  md:text-5xl   font-bold mb-10 z-10">
     WHO AM I?
   </h2>
-    <p class="text-[#dde7ae] px-6 md:px-10   text-lg text-center leading-relaxed md:text-center md:text-3xl">
+    <p class="text-[#dde7ae] px-6 md:px-10   text-lg text-center leading-relaxed md:text-center md:text-xl">
 
        I am a Front-End Developer focused on creating modern,<br>
       responsive, and engaging interfaces. <br> I prioritize user experience and
@@ -163,24 +165,24 @@ items-center -> centra horizontalmente
       and professional web applications.
 
     </p>
-  <button class="mt-12 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg hover:scale-105 transition-transform z-10 md:w-100 md:p-5 md:text-3xl">
+  <button class="mt-12 bg-[#E3FF6A] text-black font-bold py-3 px-10 rounded-full shadow-lg hover:scale-105 transition-transform z-10 md:w-30md:p-3 md:text-sm">
     SHOW MY PROJECTS
   </button> 
   
  
   <div class="mt-8 flex  gap-4     ">
-  <img class="w-26 rounded-2xl h-50 md:w-18 md:h-33  md:absolute md:left-1/4 md:-rotate-25 md:-top-10 drop-shadow-[0_0_15px_rgba(227,255,106,0.3) md:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)]  "
+  <img class="w-26 rounded-2xl h-50 md:w-15 md:h-28  md:absolute md:left-80 md:-rotate-25 md:top-10 drop-shadow-[0_0_15px_rgba(227,255,106,0.3) md:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)]  "
     src="img/imagen.png" alt="primer imagen volador"
   >
   
-  <img class="w-25 h-50  md:w-25 md:h-70 md:top-1/2 md:absolute md:left-1/6 md:rotate-25  rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)] md:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)] "
+  <img class="w-25 h-50  md:w-20 md:h-50 md:top-1/2 md:absolute md:left-26 md:rotate-25  rounded-2xl drop-shadow-[0_0_15px_rgba(227,255,106,0.3)] md:drop-shadow-[0_0_12px_rgba(255,255,255,0.25)] "
     src="img/imagen2.png" 
     alt="segunda imagen volador"
     
   >
 
   
-  <img  class="w-25 h-50 rounded-2xl  md:absolute md:top-50 md:right-65 md:w-50  md:h-70  md:-rotate-25 drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
+  <img  class="w-25 h-50 rounded-2xl  md:absolute md:top-50 md:right-50 md:w-25  md:h-46  md:-rotate-25 drop-shadow-[0_0_15px_rgba(227,255,106,0.3)]"
     src="img/imagen3.png" 
     alt="tercer imagen volador"
    
@@ -194,66 +196,66 @@ items-center -> centra horizontalmente
 </section>
   <!-- section 3 MY SKILLS -->
        <div>
-         <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10 md:text-8xl text-center md:m-25 "> MY SKILLS</h2>
+         <h2 class="text-4xl text-[#E3FF6A] font-bold mb-10 z-10 md:text-5xl text-center md:m-25 "> MY SKILLS</h2>
        </div>
 
-    <section class="grid grid-cols-1 md:grid-cols-6 md:gap-6 md:items-start m-5">
+    <section class="grid grid-cols-1 md:grid-cols-6 md:gap-6 md:items-start m-5 md:m-22">
 
   <!-- FILA 1 + 2 DE IMÁGENES (4 columnas por fila) -->
   <div class="md:col-span-4 flex flex-col gap-4">
 
     <!-- fila 1 -->
-    <div class="grid grid-cols-4 gap-4 md:h-75  ">
+    <div class="grid grid-cols-4 gap-4 md:h-38  ">
       <div class="bg-[#1d2236] p-4 rounded-sm   ">
-        <img class="w-10 md:w-45 mx-auto   " src="img/html-5.png">
+        <img class="w-30 md:w-30 mx-auto  " src="img/html-5.png">
       </div>
 
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto " src="img/css-3.png">
+        <img class="w-30 md:w-30 mx-auto " src="img/css-3.png">
       </div>
 
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto " src="img/secuencia-de-comandos-de-java.png">
+        <img class="w-30 md:w-30 mx-auto " src="img/secuencia-de-comandos-de-java.png">
       </div>
 
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto" src="img/react.png">
+        <img class="w-30 md:w-30 mx-auto" src="img/react.png">
       </div>
     </div>
 
     <!-- fila 2 -->
-    <div class="grid grid-cols-4 gap-4 md:h-75 ">
+    <div class="grid grid-cols-4 gap-4 md:h-38 ">
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto" src="img/internet.png">
+        <img class="w-30 md:w-30 mx-auto" src="img/internet.png">
       </div>
 
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto" src="img/icons8-javascript-40.png">
+        <img class="w-30 md:w-30 mx-auto" src="img/icons8-javascript-40.png">
       </div>
 
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto" src="img/icons8-viento-de-cola-48.png">
+        <img class="w-30 md:w-30 mx-auto" src="img/icons8-viento-de-cola-48.png">
       </div>
 
       <div class="bg-[#1d2236] p-4 rounded-sm">
-        <img class="w-10 md:w-45 mx-auto" src="img/icons8-nodejs-48.png">
+        <img class="w-30 md:w-30 mx-auto" src="img/icons8-nodejs-48.png">
       </div>
     </div>
 
   </div>
 
   <!-- TEXTO (OCUPA 2 COLUMNAS A LA DERECHA) -->
- <div class="md:col-span-2 flex flex-col justify-start items-center bg-gray-900 rounded-sm p-5 m-3  md:px-10 md:py-8  md:self-start md:gap-16">
+ <div class="md:col-span-2 flex flex-col justify-start items-center bg-gray-900 rounded-sm p-5 m-3 md:h-77 md:w-80 md:px-2 md:py-8  md:self-start md:gap-0.5">
 
-    <p class="text-white text-3xl md:text-9xl font-bold ">4</p>
+    <p class="text-white text-3xl md:text-4xl font-bold ">4</p>
 
-    <p class="text-white text-center md:text-6xl md:font-bold ">
+    <p class="text-white text-center md:text-2xl md:font-bold md:mt-5 ">
       Year <br> 
       Experience <br>
       Working
     </p>
 
-    <button class="bg-[#E3FF6A] text-black px-4 py-2 md:py-7 rounded-2xl mt-4 md:w-80 md:text-2xl font-bold">
+    <button class="bg-[#E3FF6A] text-black px-4 py-2 md:py-4 rounded-2xl mt-4 md:mt-6 md:w-42  md:text-sm font-bold md:flex ">
       DOWNLOAD My CV
     </button>
 
@@ -261,86 +263,89 @@ items-center -> centra horizontalmente
 
 </section>
       <!-- section 4 ADDITIONAL SKILLS -->
-   <section class="flex flex-col items-center justify-center m-5 bg-[#1d2236] rounded-sm p-7  md:-bottom-200 md:m-25    ">
+   <section class="flex flex-col   items-center justify-center m-5 bg-[#1d2236] rounded-sm p-7  md:-bottom-200 md:m-22    ">
       <div class="md:text-center">
-        <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10 md:text-6xl "> ADDITIONAL SKILLS</h3> </div>
-     <div class= "flex gap-3  m-5 md:flex ">
+        <h3  class="text-4xl  text-center text-[#E3FF6A] font-bold mb-10 z-10 md:text-4xl "> ADDITIONAL SKILLS</h3> </div>
+     <div class="md:flex md:gap-10">
+        <div class= "flex gap-3  m-5 md:flex  ">
     <div class=" p-1"> 
-      <img  class="w-10 md:w-25 " src="img/bootstrap_plain_logo_icon_146619.png" alt="">
+      <img  class="w-10 md:w-18 " src="img/bootstrap_plain_logo_icon_146619.png" alt="">
     </div>
     <div  class=" p-1"> 
-      <img class="w-20 md:w-60"  src="img/axios_logo_icon_168546.png" alt="">
+      <img class="w-20 md:w-45"  src="img/axios_logo_icon_168546.png" alt="">
     </div>
     <div  class=" p-1"> 
-      <img class="w-10 md:w-25"  src="img/redux_original_logo_icon_146365.png" alt="">
+      <img class="w-10 md:w-18"  src="img/redux_original_logo_icon_146365.png" alt="">
     </div>
     <div  class=" p-1">
-       <img class="w-10 md:w-25"  src="img/mui_logo_icon_248416.png" alt="">
+       <img class="w-10 md:w-18"  src="img/mui_logo_icon_248416.png" alt="">
       </div>
       </div>
       <div class="flex gap-3 m-5 md:flex ">
     <div   class=" p-1">
-       <img class="w-10 md:w-25"  src="img/firebase_logo_icon_171157.png" alt="">
+       <img class="w-10 md:w-18"  src="img/firebase_logo_icon_171157.png" alt="">
       </div>
     <div class=" p-1">
-       <img class="w-10 md:w-25"  src="img/WordPress_icon-icons.com_66922.png" alt="">
+       <img class="w-10 md:w-18"  src="img/WordPress_icon-icons.com_66922.png" alt="">
       </div>
     <div class=" p-1"> 
-      <img class="w-10 md:w-25"  src="img/framer-motion-logo-png_seeklogo-446185.png" alt="">
+      <img class="w-10 md:w-18"  src="img/framer-motion-logo-png_seeklogo-446185.png" alt="">
     </div>
     </div>
+    
+     </div>
    </section>
   <!-- section 4 THE WORKS -->
   <section class="flex flex-col md:flex-row md:items-center md:justify-center md:mx-auto  md:gap-10 md:mb-60 md:relative">
     
         <div class="md:w-170 flex items-start md:flex md:flex-col md:justify-center md:items-center  ">
-      <h2 class="text-3xl text-center m-10 font-extrabold md:text-8xl md:text-left ">
+      <h2 class="text-3xl text-center m-10 font-extrabold md:text-5xl md:text-left ">
   THE WORKS <br> CLOSEST TO <br> MY HEART
 </h2>
       </div>
       <div class=" flex gap-4  m-10  "> 
-      <img class="w-25 h-45 rounded-2xl md:w-100 md:h-150" src="img/imagen2.png" alt="img1">
-      <img class="w-25 h-45 rounded-2xl md:w-90 md:h-150" src="img/imagen.png" alt="img1">
-      <img class="w-25 h-45 rounded-2xl md:w-100 md:h-150" src="img/imagen3.png" alt="img1">
+      <img class="w-25 h-45 rounded-2xl md:w-60 md:h-80" src="img/imagen2.png" alt="img1">
+      <img class="w-25 h-45 rounded-2xl md:w-60 md:h-80" src="img/imagen.png" alt="img1">
+      <img class="w-25 h-45 rounded-2xl md:w-60 md:h-80" src="img/imagen3.png" alt="img1">
        
     </div>
-    <div class="flex md:absolute md:left-95 md:bottom-25 md:flex md:flex-col md:justify-center md:items-center">
-    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-2 rounded-xl mt-1 w-50 m-5 md:absolute md:text-4xl md:w-100 md:px-1 md:py-4 md:rounded-3xl ">SHOW MY PROYECTS</button>
-       <P class="font-bold md:text-3xl md:absolute md:-right-90">Plumbig <br> Company</P>
+    <div class="flex md:absolute md:left-75 md:bottom-9  md: md:flex md:flex-col md:justify-center md:items-center">
+    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-2 rounded-xl mt-1 w-50 m-5 md:absolute md:text-2xl md:w-75 md:px-1 md:py-2 md:rounded-3xl ">SHOW MY PROYECTS</button>
+       <P class="font-bold md:text-lg md:absolute md:-right-68">Plumbig <br> Company</P>
        </div>
    </section>
 
     <!-- section 5 FORMULARIO -->
 
-   <section class="bg-white flex flex-col m-5 rounded-2xl p-6  md:h-280 md:px-10 md:py-30 md:m-20">
-  <h2 class="text-center font-bold text-[#0D1117] text-3xl mb-8 mt-2 md:text-7xl ">
+   <section class="bg-white flex flex-col m-5 rounded-2xl p-6 md:w-250   ">
+  <h2 class="text-center font-bold text-[#0D1117] text-3xl mb-8 mt-2 md:text-3xl ">
     LET´S HAVE A CHAT
   </h2>
 
-  <div class="flex flex-col gap-4 md:text clear-start md:text-4xl   ">
+  <div class="flex flex-col gap-4  clear-start md:text-3xl    ">
     
     <input 
       type="text" 
       aria-label="Nombre completo"
       placeholder="YOUR NAME" 
-      class="bg-[#cdcfd3] text-black placeholder:text-gray-500  md:h-25 border  border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500  md:text-xl md:h-15 border  border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
     >
 
     <input 
       type="email" 
       aria-label="Correo electrónico"
       placeholder="YOUR EMAIL" 
-      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 md:h-25 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 md:text-xl md:h-15 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors"
     >
 
     <textarea 
       placeholder="CHAT HERE..." 
       aria-label="Mensaje"
       rows="4"
-      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 md:h-120 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors resize-none"
+      class="bg-[#cdcfd3] text-black placeholder:text-gray-500 md:text-xl md:h-25 border border-transparent rounded-xl px-4 py-3 focus:outline-none focus:border-[#E3FF6A] transition-colors resize-none"
     ></textarea>
 
-    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-4 rounded-xl mt-2 md:rounded-3xl ">
+    <button class="bg-[#E3FF6A] text-[#0D1117] font-bold py-4 rounded-xl mt-2 md:rounded-2xl md:text-xl md-50  ">
       SUBMIT HERE
     </button>
   </div>
