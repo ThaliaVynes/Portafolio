@@ -1,71 +1,90 @@
-// const thaliaVA = {
-//     nombre: "Thalia Alejo Villar",
-//     profesion: "Estudiante de Desarrollo de Software",
+let todo = document.querySelector("#todo");
+let botoncito = document.querySelector("#btn");
 
-//     descripcion:
-//         "Apasionada por el desarrollo web y la programación, enfocada en crear proyectos y aprender nuevas tecnologías.",
+botoncito.addEventListener("change", function () {
+  todo.classList.toggle("dark");
+});
 
-//     niveles: {
-//         backend: 70,
-//         frontend: 30,
-//         ia: 80
-//     },
 
-//     skills: [
-//         "HTML",
-//         "CSS",
-//         "JavaScript",
-//         "Bootstrap",
-//         "Git",
-//         "GitHub"
-//     ],
 
-//     additionalSkills: [
-//         "QA Testing",
-//         "Trabajo en equipo",
-//         "Resolución de problemas",
-//         "Aprendizaje continuo"
-//     ],
 
-//     proyectos: [
-//         {
-//             nombre: "Portafolio Personal",
-//             descripcion: "Mini proyecto web personal",
-//             tecnologias: ["HTML", "CSS", "JavaScript"],
-//             link: "https://portafolio-navy-six-70.vercel.app/"
-//         },
-//         {
-//             nombre: "Sistema de Reservas",
-//             descripcion: "Proyecto de base de datos y gestión",
-//             tecnologias: ["SQL", "JavaScript"]
-//         }
-//     ],
 
-//     redes: {
-//         github: "",
-//         linkedin: "",
-//         instagram: ""
-//     },
 
-//     contacto: {
-//         email: "thalia@gmail.com",
-//         telefono: "+51 942142627"
-//     },
 
-//     imgProfile: "./imagenes/perfil.png",
 
-//     galeria: [
-//         "./imagenes/proyecto1.png",
-//         "./imagenes/proyecto2.png",
-//         "./imagenes/proyecto3.png"
-//     ]
-// };
 
-// console.log(thaliaVA)
-const darkModeInput = document.querySelector("#darkmode");
+const thaliaVA = {
+  nombre: "Thalia Villar",
 
-if (darkModeInput) {
-  darkModeInput.addEventListener("change", () => {
-    document.documentElement.classList.toggle("dark");
-  });
-}
+  profesion: "Front-End Developer",
+
+  slogan: "FULL STACK Front-End Developer",
+
+  experiencia: 4,
+
+  descripcion: `
+    I am a Front-End Developer focused on creating modern,
+    responsive and engaging interfaces.
+
+    I work with technologies such as HTML, CSS,
+    Tailwind CSS and JavaScript.
+
+    I am passionate about transforming ideas into
+    intuitive digital experiences.
+  `,
+
+  expertise: {
+    backend: 90,
+    cms: 50,
+    frontend: 91
+  },
+
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Internet",
+    "Tailwind CSS",
+    "NodeJS"
+  ],
+
+  additionalSkills: [
+    "Bootstrap",
+    "Axios",
+    "Redux",
+    "Material UI",
+    "Firebase",
+    "WordPress",
+    "Framer Motion"
+  ],
+
+  proyectos: [
+    {
+      nombre: "Plumbing Company"
+    }
+  ],
+
+  galeria: [
+    "img/imagen.png",
+    "img/imagen2.png",
+    "img/imagen3.png"
+  ],
+
+  contacto: {
+    formulario: true
+  }
+};
+
+console.log(thaliaVA);
+
+
+
+document.getElementById("nombre").innerHTML = `
+  I'm <em class="text-[#E3FF6A] not-italic text-3xl md:text-5xl">
+    ${thaliaVA.nombre}
+  </em>
+`;
+document.getElementById("profesion").textContent = thaliaVA.profesion;
+document.getElementById("descripcion").textContent = thaliaVA.descripcion;
+
